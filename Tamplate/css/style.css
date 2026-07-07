@@ -1,0 +1,441 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ================= BODY ================= */
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url('../resource/arrahmah.jpeg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+/* ================= CONTENT ================= */
+
+.content{
+
+    flex:1;
+
+}
+
+/* ================= LOGIN ================= */
+
+.login-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+}
+
+.login-box{
+
+    width:420px;
+    background:rgba(255,255,255,.95);
+    padding:35px;
+    border-radius:20px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.3);
+
+}
+
+.login-box h2{
+
+    text-align:center;
+    color:#444;
+    margin-bottom:25px;
+    border-bottom:2px solid #eee;
+    padding-bottom:15px;
+
+}
+
+/* ================= INPUT ================= */
+
+input:not([type="checkbox"]):not([type="radio"]),
+select{
+
+    width:100%;
+    padding:13px 18px;
+    margin:10px 0;
+
+    border:1px solid #ccc;
+    border-radius:25px;
+
+    outline:none;
+    transition:.3s;
+
+}
+
+input:not([type="checkbox"]):focus{
+
+    border-color:#2d89ef;
+    box-shadow:0 0 8px rgba(45,137,239,.3);
+
+}
+
+/* checkbox */
+
+input[type="checkbox"],
+input[type="radio"]{
+
+    width:auto;
+
+}
+
+/* ================= BUTTON ================= */
+
+input[type="submit"],
+input[type="reset"]{
+
+    background:#2d89ef;
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:17px;
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+
+    background:#006aff;
+
+    transform:translateY(-2px);
+
+}
+
+/* ================= REMEMBER ================= */
+
+
+
+.remember-box{
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:12px;
+
+    margin:18px 0;
+
+}
+
+.remember-box input[type="checkbox"]{
+
+    width:20px;
+    height:20px;
+
+    margin:0;
+
+    flex-shrink:0;
+
+}
+
+.remember-box label{
+
+    margin:0;
+
+    color:#444;
+    font-size:16px;
+
+    cursor:pointer;
+
+    line-height:20px;
+
+}
+
+/* ================= PASSWORD ================= */
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    padding-right:45px;
+
+}
+
+.eye-icon{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+.eye-icon:hover{
+
+    color:#006aff;
+
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+    background:#280872;
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+/* ================= SIDEBAR ================= */
+
+aside{
+
+    width:20%;
+    min-height:100vh;
+
+    background:#1d1d1d;
+
+}
+
+/* ================= MAIN ================= */
+
+section.main{
+
+    width:80%;
+    min-height:100vh;
+
+    background:white;
+
+    padding:20px;
+
+}
+
+/* ================= MENU ================= */
+
+.menu{
+
+    list-style:none;
+
+}
+
+.menu li{
+
+    border-bottom:1px solid #333;
+
+}
+
+.menu a{
+
+    display:block;
+
+    color:white;
+
+    padding:15px 20px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.menu a:hover,
+.menu a.aktif{
+
+    background:#4b0fb3;
+
+    padding-left:30px;
+
+}
+
+/* ================= TABLE ================= */
+
+.table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.table th,
+.table td{
+
+    border:1px solid #ccc;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+.table th{
+
+    background:#f5f5f5;
+
+}
+
+.table tr:hover{
+
+    background:#fafafa;
+
+}
+
+/* ================= BUTTON CRUD ================= */
+
+.tombol{
+
+    display:inline-block;
+
+    padding:10px 15px;
+
+    color:white;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    background:#038ade;
+
+    transition:.3s;
+
+}
+
+.tombol:hover{
+
+    opacity:.9;
+
+    transform:translateY(-2px);
+
+}
+
+.tombol.edit{
+
+    background:#28a745;
+
+}
+
+.tombol.hapus{
+
+    background:#dc3545;
+
+}
+
+.tombol.reset{
+
+    background:#fb8307;
+
+}
+
+/* ================= FORM ================= */
+
+.form-group{
+
+    margin-bottom:15px;
+
+    overflow:hidden;
+
+}
+
+.form-group label{
+
+    float:left;
+
+    width:30%;
+
+    font-weight:bold;
+
+    padding-top:12px;
+
+}
+
+.form-group .input{
+
+    float:left;
+
+    width:70%;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#ffffff;
+
+    color:#333;
+
+    text-align:center;
+
+    padding:12px;
+
+    margin-top:10px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.login-box{
+
+width:90%;
+
+padding:25px;
+
+}
+
+.form-group label,
+.form-group .input{
+
+width:100%;
+
+float:none;
+
+}
+
+aside,
+section.main{
+
+width:100%;
+
+}
+
+}

@@ -1,0 +1,53 @@
+/* ROOT COLOR */
+:root{
+    --biru-utama: #4aa3c0;  
+    --biru-tua: #2c7da0;
+    --biru-muda: #89c2d9;
+    --hitam: #1e1e1e;
+    --putih: #ffffff;
+}
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+}
+
+/* TOP BAR */
+.topbar{
+    background: var(--biru-utama);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* NAVBAR */
+.navbar{
+    background: var(--hitam) !important;
+}
+
+/* HERO */
+.hero{
+    background: var(--biru-utama);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* CARD */
+.card{
+    transition: 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
