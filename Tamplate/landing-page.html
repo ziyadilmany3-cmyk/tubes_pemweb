@@ -14,21 +14,57 @@
 
 <body>
     <!-- ================= NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <span class="navbar-brand text-white">SMA IT Ar Rahmah</span>
-
-            <div>
-                <a href="#" class="btn btn-sm btn-outline-light">Halaman Muka</a>
-                <a href="#mutu" class="btn btn-sm btn-outline-light">Jaminan</a>
-                <a href="#program" class="btn btn-sm btn-outline-light">Program</a>
-                <a href="#kontak" class="btn btn-sm btn-outline-light">
-                    📍 Maps</a>
-
-                <a href="login.php" class="btn btn-warning btn-sm">Login</a>
-                
-                </a>
+    
+            <a class="navbar-brand fw-bold" href="#">
+                SMA IT Ar Rahmah
+            </a>
+    
+            <!-- Tombol Burger -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+    
+                <span class="navbar-toggler-icon"></span>
+    
+            </button>
+    
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+    
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Halaman Muka</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mutu">Jaminan</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#program">Program</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">📍 Maps</a>
+                    </li>
+    
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-warning" href="login.php">
+                            Login
+                        </a>
+                    </li>
+    
+                </ul>
+    
             </div>
+    
         </div>
     </nav>
 
